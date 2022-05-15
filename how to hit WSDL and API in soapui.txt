@@ -1,0 +1,42 @@
+Notes by: Kapil sir
+============================================================================
+Steps in Soap service:
+
+1. click on soap project(search calculator wsdl in google)
+2. ADD wsdl file/url and give project name, make all checkboxes as bydefault
+    eg. http://www.dneonline.com/calculator.asmx?WSDL
+3. click on any api (+) and then click on request
+4. in request pass then values
+   eg. in add pass 10 and 10 as int a and int b by removing question mark
+5. click on green run button.
+6.now you will get the response.
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+Steps in rest service:
+
+1. click on rest project
+2.pass the url from service
+   eg. https://gorest.co.in/public/v1/users
+3. add the method
+4.by clicking on + button add headors in header
+   key:Authorization
+   key:Content-type
+   note: make sure all spells are correct
+5. you will get response here but you cant apply any assertions.
+
+6. to apply any assertion/validations right click on project and select-> new test suit
+   - give any name for that test suit
+7. now right click on testsuit and create a new test case-> new test case
+8. then right click on testcase and add new test request->add step-> rest request
+9. select the request(sometimes automatically populate the request)
+10. now you will get the assertion tab below side
+11. click on assertion and then clickon + icon
+12. you will get the diff assertion
+    eg. content- to verify string
+        not content- same as above but opposite
+        valid http status code- to verify status code
+        invalid http status code- same as above
+        response SLA- to verify response time    
+
+
+   
